@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="itime">
     <div class="title">{{ title }}</div>
     <div class="boxs">
       <div
@@ -14,7 +14,8 @@
         </div>
         <div class="right">
           <div class="text">
-            <span class="time">{{ box.time }}</span> <span class="txt">{{ box.txt }}</span>
+            <div class="time">{{ box.time }}</div>
+            <div class="txt">{{ box.txt }}</div>
           </div>
         </div>
       </div>

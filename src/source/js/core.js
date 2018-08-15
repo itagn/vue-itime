@@ -30,7 +30,7 @@ export default {
         }
         boxs.push(obj)
       })
-      return boxs.sort((a, b) => Date(a.time) - Date(b.time))
+      return boxs.sort((a, b) => this.getTime(a.time) - this.getTime(b.time))
     },
     title () {
       const { title = '' } = this.pData
@@ -38,6 +38,9 @@ export default {
     }
   },
   methods:{
+    getTime (time) {
+      return new Date(time).getTime()
+    },
     getColor (color = '') {
       const obj = {
         circle: `circle ${color}`.trim(),
