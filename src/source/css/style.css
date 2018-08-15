@@ -38,10 +38,16 @@
   height: 100%;
   box-sizing: border-box;
 }
-.txt {
+.text {
   position: absolute;
   top: 39px;
   left: 10px;
+}
+.time {
+  color: #ccc;
+  cursor: pointer;
+}
+.txt {
   color: #334455;
 }
 .pink {
@@ -59,4 +65,7 @@
 .love {
   background: url(../img/heart.png) no-repeat;
   background-size: 100% 100%;
+}
+.lovecolor {
+  background: #ecaacd;
 }

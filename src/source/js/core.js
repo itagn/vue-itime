@@ -25,11 +25,12 @@ export default {
       data.forEach((val, i) => {
         const obj = {
           txt: val.txt,
+          time: val.time,
           color: Boolean(val.color) ? val.color : this.colors[k++ % 5]
         }
         boxs.push(obj)
       })
-      return boxs
+      return boxs.sort((a, b) => Date(a.time) - Date(b.time))
     },
     title () {
       const { title = '' } = this.pData
@@ -40,7 +41,7 @@ export default {
     getColor (color = '') {
       const obj = {
         circle: `circle ${color}`.trim(),
-        line: `line ${color === 'love' ? '' : color}`.trim()
+        line: `line ${color === 'love' ? 'lovecolor' : color}`.trim()
       }
       return obj
     }

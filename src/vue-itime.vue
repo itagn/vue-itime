@@ -13,8 +13,8 @@
             :class="getColor(box.color).line"></div>
         </div>
         <div class="right">
-          <div class="txt">
-            {{ box.txt }}
+          <div class="text">
+            <span class="time">{{ box.time }}</span> <span class="txt">{{ box.txt }}</span>
           </div>
         </div>
       </div>
