@@ -1,0 +1,62 @@
+.title {
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  font-size: 1.5rem;
+  color: #666;
+}
+.box {
+  position: relative;
+  width: 100vw;
+  height: 100px;
+}
+.left {
+  position: relative;
+  float: left;
+  width: 20px;
+  height: 100%;
+}
+.circle {
+  position: absolute;
+  top: 42px;
+  left: 2px;
+  width: 16px;
+  height:16px;
+  border-radius: 50%;
+  background: lightblue;
+}
+.line {
+  width: 1px;
+  height: 100%;
+  margin-left: 9.5px;
+  background: lightblue;
+}
+.right {
+  position: relative;
+  float: left;
+  width: calc(100% - 20px);
+  height: 100%;
+  box-sizing: border-box;
+}
+.txt {
+  position: absolute;
+  top: 39px;
+  left: 10px;
+  color: #334455;
+}
+.pink {
+  background: rgb(242, 215, 225);
+}
+.green {
+  background: rgb(176, 230, 209);
+}
+.blue {
+  background: #a9d6ff;
+}
+.orange {
+  background: #f3b6a7;
+}
+.love {
+  background: url(../img/heart.png) no-repeat;
+  background-size: 100% 100%;
+}
